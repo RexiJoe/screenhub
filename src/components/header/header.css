@@ -1,0 +1,58 @@
+
+/* Titulo y header  */
+
+.header{
+    width: 100%;
+    min-height: 70px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    flex-wrap: wrap;
+    
+}
+
+
+/* Selects, generos y premieres */
+
+select{
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 20, 20);
+    border: none;
+    height: 60px;
+    font-size: 20px;
+    user-select: none;
+    border-radius: 10px;
+    display: flex;
+}
+
+select option{
+    font-size: 20px;
+}
+
+
+select:focus{
+    outline: none;
+}
+
+.CgMenu{
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 500px){
+    .CgMenu{
+        display: flex;
+    }
+
+    select {
+        display: none;
+    }
+
+    .show{
+        display: flex;
+    }
+}

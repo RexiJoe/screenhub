@@ -1,0 +1,107 @@
+.video-card{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(20,20 , 20);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.video-card:hover{
+    border: 1px solid rgb(196, 1, 1);
+    box-shadow: 2px 2px 20px rgb(100, 0, 0),
+    -2px -2px 20px rgb(255, 0, 0);
+
+}
+
+.video-card:active{
+    border-color: transparent;
+    box-shadow: inset 2px 2px 20px rgb(255, 0, 0),
+    inset -2px -2px 20px rgb(100, 0, 0);
+}
+
+.video-card-image{
+    height: 70%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 0;
+    box-shadow: 2px 2px 10px rgb(255, 0, 0),
+    -2px -2px 20px rgb(100, 0, 0);
+}
+
+.video-card-description{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.date-genre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-card-title{
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 10px 10px 0px 10px;
+    overflow: hidden;
+}
+
+.video-card-date{
+    color: rgb(180, 180, 180);
+    font-size: 15px;
+    margin: 10px 0px 10px 10px;
+}
+
+.video-card-genre{
+    color: rgb(255, 255, 255);
+    background-color: rgb(196, 1, 1);
+    min-width: 60px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px){
+    .video-card{
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .video-card-image{
+        height: 100%;
+        width: 40%;
+        box-shadow: none;
+    }
+
+    .video-card-description{
+        height: 100%;
+        width: 60%;
+    }
+
+    .video-card-title{
+        height: 80%;
+        width: 100%;
+        margin: 0;
+        padding: 8px 0px 0px 8px;
+    }
+
+    .date-genre{
+        height: 20%;
+        width: 100%;
+    }
+}

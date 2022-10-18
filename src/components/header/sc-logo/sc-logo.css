@@ -1,0 +1,27 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    user-select: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.T-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.t1{
+    color: rgb(255,255,255);
+}
+
+.t2{
+    color: rgb(196, 1, 1);
+}
+
+@media screen and (max-width: 500px){
+    .title{
+        height: auto;
+    }
+}
